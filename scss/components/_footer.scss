@@ -1,0 +1,20 @@
+footer {
+    @include background-color (rgb(235, 193, 126));
+    color: black;
+    padding: 20px;
+    text-align: left;
+    }
+.text-blue-light {
+    text-decoration: none;
+    font-size: 20px;
+    }
+.fixed-whatsapp { 
+    position:fixed;
+    bottom:20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    
+    img {
+        width: 30px;
+    }}

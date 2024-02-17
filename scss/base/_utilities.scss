@@ -1,0 +1,22 @@
+@mixin flex ($direction, $justify, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    gap: $gap;
+    }
+
+@mixin images ($width,$height){
+    width: $width;
+    height: $height;
+    }
+
+@mixin background-color ($valor) {
+    background: $valor;
+     }
+    
+.flexible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }

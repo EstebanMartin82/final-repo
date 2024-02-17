@@ -1,0 +1,19 @@
+.nosotros {
+    @include background-color (darkgray);
+    padding: 20px;
+    border: 1px solid black;
+    }
+
+    .nosotros h3 {
+        text-align: left;
+        font-size: 40px;
+        margin: 25px;
+        padding: 30px;
+        }
+    .nosotros p {
+        font-size: 30px;
+        margin: 15px;
+        padding: 25px;
+        }
+
+
