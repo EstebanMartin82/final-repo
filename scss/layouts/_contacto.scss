@@ -1,54 +1,58 @@
-.encabezado-foto
-    img {
-        @include images (50%,100%);
-        margin: 10px 350px;
-        }
+.encabezado-foto img {
+    @include images (50%, 100%);
+    margin: 10px 350px;
+}
+
 form {
     font-family: $primary-font;
     font-size: 20px;
     @include background-color (darkgray);
     border: 1px solid black;
 }
-    
-.grid-container {    
+
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    'content form'
-    'map     form';
+        'content form'
+        'map     form';
     padding: 20px;
     gap: 20px;
     width: 100%;
-    
+
 
     iframe {
-        grid-area:map;
-        @include images (100%,400px);
+        grid-area: map;
+        @include images (100%, 400px);
         padding: 50px;
         margin: 0px;
-        }}
-    
-    .form-grid {
-        display: grid;
-        grid-area:content;
-        text-align:center;
-        padding: 5px;
-        gap: 10px;
-        width:100% ;
-        }
-    .form-data {
-        display: grid;
-        grid-area:form;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
+    }
+}
 
-        input,textarea {
-            width: 100%;
-            padding: 15px;
-            font-size: 20px;
-            @include background-color (rgb(26, 24, 24));
-            border: 1px solid white;
-            color: white;
-            }}
+.form-grid {
+    display: grid;
+    grid-area: content;
+    text-align: center;
+    padding: 5px;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-data {
+    display: grid;
+    grid-area: form;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+        @include background-color (rgb(26, 24, 24));
+        border: 1px solid white;
+        color: white;
+    }
+}

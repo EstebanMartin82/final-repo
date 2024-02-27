@@ -1,7 +1,6 @@
-/* navbar    */
 .navbar {
     @include background-color (rgb(235, 193, 126));
-    }
+}
 
 .nav-link {
     text-decoration: none;
@@ -10,29 +9,34 @@
     border: 2px solid black;
     padding: 5px 15px;
     transition: 0.5s;
-    }
- li {
+}
+
+li {
     text-decoration: none;
     padding: 5px;
     display: inline-block;
-    }
+}
+
 .nav-link:hover {
     @include background-color (darkgray);
-        color: beige;
-    }
-    
+    color: beige;
+}
+
 .nav-list:hover .nav-link:not(:hover) {
-        filter: blur(1px);
-    }
+    filter: blur(1px);
+}
+
 .nav-item:hover {
-        filter: blur(1px);
-        transition: 1s;
-        }
+    filter: blur(1px);
+    transition: 1s;
+}
+
 .nav-item li:hover {
     @include background-color (rgb(235, 193, 126));
-    }
+}
+
 .navbar-brand {
-        color: black;
-        border-radius: 2px solid black;
-    
-    }
+    color: black;
+    border-radius: 2px solid black;
+
+}

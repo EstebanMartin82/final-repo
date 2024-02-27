@@ -1,14 +1,13 @@
-main  {
+main {
     @include background-color (darkgray);
 }
 
 .col-sm-12 iframe {
-    @include images (550px,315px);
+    @include images (550px, 315px);
 }
 
 .imagen-personalizada {
-    width: 100%; 
+    width: 100%;
     height: 60vh;
     object-fit: cover;
-        }
-
+}
