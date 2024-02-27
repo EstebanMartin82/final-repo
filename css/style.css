@@ -20,7 +20,6 @@ h3::first-letter {
   justify-content: center;
 }
 
-/* navbar    */
 .navbar {
   background: rgb(235, 193, 126);
 }
@@ -87,9 +86,9 @@ footer {
 }
 
 .encabezado-foto img {
-  width: 50%;
+  width: 100%;
   height: 100%;
-  margin: 10px 350px;
+  object-fit: contain;
 }
 
 form {
@@ -97,6 +96,7 @@ form {
   font-size: 20px;
   background: darkgray;
   border: 1px solid black;
+  width: 100%;
 }
 
 .grid-container {
@@ -127,11 +127,11 @@ form {
 .form-data {
   display: grid;
   grid-area: form;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.form-data input, .form-data textarea {
+.form-data input,
+.form-data textarea {
   width: 100%;
   padding: 15px;
   font-size: 20px;
@@ -267,6 +267,8 @@ main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "content" "form" "form" "map";
+    place-items: center;
+    place-content: center;
   }
 }
 @media (max-width: 720px) {
@@ -290,6 +292,11 @@ main {
 @media (max-width: 720px) {
   .productos-content-imagen {
     max-width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .encabezado-foto {
+    height: 100%;
   }
 }
 .nosotros {
@@ -322,7 +329,10 @@ main {
 }
 
 .productos-content {
-  width: 47%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  width: 31%;
   background-color: rgb(203, 207, 207);
   overflow: hidden;
   padding: 20px;
@@ -332,6 +342,8 @@ main {
 .productos-content img {
   width: 600px;
   height: 350px;
+  width: 100%;
+  height: 300px;
   object-fit: cover;
   filter: blur(1px);
   transition: 0.5s;
@@ -340,18 +352,22 @@ main {
 .productos-content a {
   text-decoration: none;
   font-size: 20px;
-  padding: 75px;
+  padding: 15px;
+  margin: 15px;
   transition: 0, 5s;
-  text-align: left;
+  text-align: center;
 }
 .productos-content a:hover {
-  background: white;
-  box-shadow: 1px 1px 1px 1px rgb(238, 207, 157);
+  background: rgb(238, 207, 157);
+  box-shadow: 1px 1px 1px 1px rgb(8, 8, 8);
+  color: black;
 }
 .productos-content img:hover {
   filter: blur(0);
-  border-radius: 6px solid black;
+  border-radius: 3px solid black;
   box-shadow: 5px 5px 10px 10px black;
+  width: 110%;
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */

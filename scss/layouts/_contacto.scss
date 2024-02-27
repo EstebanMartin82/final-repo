@@ -1,6 +1,6 @@
 .encabezado-foto img {
-    @include images (50%, 100%);
-    margin: 10px 350px;
+    @include images (100%, 100%);
+    object-fit: contain;
 }
 
 form {
@@ -8,6 +8,7 @@ form {
     font-size: 20px;
     @include background-color (darkgray);
     border: 1px solid black;
+    width: 100%;
 }
 
 .grid-container {
@@ -41,7 +42,6 @@ form {
 .form-data {
     display: grid;
     grid-area: form;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 
