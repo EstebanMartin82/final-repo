@@ -145,8 +145,8 @@ main {
 }
 
 .col-sm-12 iframe {
-  width: 550px;
-  height: 315px;
+  width: 100%;
+  height: 300px;
 }
 
 .imagen-personalizada {
@@ -155,11 +155,17 @@ main {
   object-fit: cover;
 }
 
+.d-inline-block {
+  width: 90px;
+  height: 60px;
+}
+
 .element {
   width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(45deg, black, rgba(255, 255, 255, 0.034)), url("../assets/Images/bafle-edifier.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .element h2 {
   color: rgba(255, 255, 255, 0.781);
@@ -192,29 +198,29 @@ main {
     opacity: 5;
   }
 }
-.carousele {
+.carousel {
   width: 100%;
-  height: 800px;
+  height: 650px;
   overflow: hidden;
   position: relative;
 }
-.carousele .slide {
+.carousel .slide {
   width: 100%;
   height: 100%;
   position: absolute;
   opacity: 0;
   animation: carousel 15s infinite linear;
 }
-.carousele .slide:nth-child(1) {
+.carousel .slide:nth-child(1) {
   animation-delay: 0s;
 }
-.carousele .slide:nth-child(2) {
+.carousel .slide:nth-child(2) {
   animation-delay: 5s;
 }
-.carousele .slide:nth-child(3) {
+.carousel .slide:nth-child(3) {
   animation-delay: 10s;
 }
-.carousele .slide img {
+.carousel .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -234,11 +240,6 @@ main {
     opacity: 0;
   }
 }
-.d-inline-block {
-  width: 90px;
-  height: 60px;
-}
-
 @media (max-width: 480px) {
   .productos.productos-content {
     width: 100%;

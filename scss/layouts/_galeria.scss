@@ -3,7 +3,7 @@ main {
 }
 
 .col-sm-12 iframe {
-    @include images (550px, 315px);
+    @include images (100%, 300px);
 }
 
 .imagen-personalizada {
